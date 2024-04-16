@@ -1,0 +1,51 @@
+Guess_Game_Pseudocode
+Constant  BOARD_SIZE = 3
+Constant OPTIONS = ['A', 'B', 'C', '1', '2', '3']
+Declare Integer = size, random_option, row, column
+Declare String = secret_value, input_value
+
+Function generate_board(size, options):
+    board = empty list
+    For each row in range(size):
+        temp_row = empty list
+        For each column in range(size):
+            Append a random element from options to temp_row
+        Append temp_row to board
+    Return board
+
+Function show_board(board):
+    For each row in board:
+        For each element in row:
+            Display the element
+        Display a new line
+
+Function hide_value(board):
+    max_index = size of the board - 1
+    row = random integer in range(0, max_index)
+    column = random integer in range(0, max_index)
+    secret_value = value at board[row][column]
+    Set board[row][column] as "*"
+    Return secret_value, board
+
+Function play_game():
+    Display "Welcome to the Guess the Number Game"
+    size = BOARD_SIZE
+    board = generate_board(size, OPTIONS)
+    show_board(board)
+    Display a new line
+    secret_value, board = hide_value(board)
+    show_board(board)
+    Wait for a few seconds
+    Display "Enter the number you think was hidden: "
+    Read input_value
+
+If input_value is equal to secret_value then
+        Display "Congratulations! You guessed the hidden number."
+    Else
+        Display "Sorry, the hidden number was", secret_value
+    End If
+
+Function main():
+    Call play_game() to start the game
+
+End
