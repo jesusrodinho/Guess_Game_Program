@@ -1,0 +1,38 @@
+Analisis Guess_Game
+
+Problema: Juego de adivinar el número.
+El juego de adivinar el número consiste en que el jugador intenta adivinar un número secreto que ha sido ocultado en un tablero. El jugador gana si adivina correctamente el número.
+
+Entradas:
+Tamaño del tablero (constante): Define el tamaño del tablero de juego.
+Opciones de juego (constante): Lista de elementos que pueden ser escondidos en el tablero.
+Número ingresado por el jugador: El jugador ingresa un número que cree que es el número oculto.
+
+Salidas:
+Mensaje indicando si el jugador ganó o perdió el juego.
+Valor secreto: El número oculto que el jugador debe adivinar.
+
+Constantes:
+Tamaño del tablero: Determina el tamaño del tablero de juego.
+Opciones de juego: Lista de elementos que pueden ser escondidos en el tablero.
+Mensajes de bienvenida y despedida: Mensajes estáticos que dan la bienvenida al jugador y le preguntan si desea jugar de nuevo.
+
+Otras variables:
+Variables para posiciones aleatorias en el tablero: Se utilizan para seleccionar aleatoriamente una posición en el tablero donde ocultar el valor secreto.
+Valor secreto: El número que se oculta en el tablero y que el jugador debe adivinar.
+Valor ingresado: El número que el jugador ingresa como su intento de adivinar el número secreto.
+
+Procesos:
+Generación del tablero: Se genera un tablero de juego aleatorio con elementos de la lista de opciones.
+Ocultamiento del valor secreto: Se selecciona aleatoriamente una posición en el tablero donde se oculta el valor secreto.
+Mostrar tablero inicial: Se muestra en pantalla el tablero de juego antes de ocultar el valor secreto.
+Mostrar tablero con valor secreto oculto: Se muestra en pantalla el tablero de juego después de ocultar el valor secreto.
+Entrada del jugador: Se solicita al jugador que ingrese un número que cree que es el valor secreto.
+Verificación del número ingresado: Se verifica si el número ingresado por el jugador es igual al valor secreto.
+Resultado del juego: Se muestra en pantalla si el jugador ganó o perdió el juego, dependiendo de si adivinó correctamente el número secreto.
+
+Restricciones:
+El tamaño del tablero debe ser un valor constante predefinido.
+El jugador solo puede ingresar números como intentos de adivinar el número secreto.
+El jugador gana si adivina correctamente el número secreto y pierde si no lo hace.
+
